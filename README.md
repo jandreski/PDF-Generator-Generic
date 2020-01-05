@@ -34,3 +34,4 @@ A sample PDF can be seen [here](/data/other/example_pdf.pdf "Example PDF")
 | **Event templates** | Go to */data/templates/* and edit the respective **editMe.txt** files |
 | **Preview PDFs** | Go to */data/templates/* and change out the respective **Sample.pdf** files |
 | **Schedule template** | This template only affect Event 2. Go to */data/intermediate/schedule_template.txt*, to edit the template |
+| **Members of a group** | Go to */data/datenbank/*. There will be *.csv* files that can be updated |
