@@ -1,0 +1,6 @@
+This is Event 3.
+
+To edit the contents of this using Latex, go to:
+
+Application directory/data/templates/Event3/edit_me.txt
+

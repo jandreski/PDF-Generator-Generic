@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html data-markdown-preview-plus-context="html-export">
+  <head>
+    <meta charset="utf-8" />
+    <title>README</title>
+    <style>.emoji {
+  max-width: 1em !important;
+}
+del {
+  text-decoration: none;
+  position: relative;
+}
+del::after {
+  border-bottom: 1px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+ul.contains-task-list li.task-list-item {
+  position: relative;
+  list-style-type: none;
+}
+ul.contains-task-list li.task-list-item input.task-list-item-checkbox {
+  position: absolute;
+  transform: translateX(-100%);
+  width: 30px;
+}
+span.critic.comment {
+  position: relative;
+}
+span.critic.comment::before {
+  content: '\1f4ac';
+  position: initial;
+}
+span.critic.comment > span {
+  display: none;
+}
+span.critic.comment:hover > span {
+  display: initial;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  border-radius: 5px;
+  max-height: 4em;
+  overflow: auto;
+}
+span.critic.comment:focus > span {
+  display: initial;
+  text-decoration: underline;
+  position: initial;
+  top: auto;
+  left: auto;
+  border: initial;
+  border-radius: initial;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+body {
+  overflow: initial !important;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  line-height: 1.6;
+  word-wrap: break-word;
+  padding: 30px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+}
+body > *:first-child {
+  margin-top: 0 !important;
+}
+body > *:last-child {
+  margin-bottom: 0 !important;
+}
+body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+body .absent {
+  color: #c00;
+}
+body .anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+body .anchor:focus {
+  outline: none;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+body h1 .octicon-link,
+body h2 .octicon-link,
+body h3 .octicon-link,
+body h4 .octicon-link,
+body h5 .octicon-link,
+body h6 .octicon-link {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+body h1:hover .anchor,
+body h2:hover .anchor,
+body h3:hover .anchor,
+body h4:hover .anchor,
+body h5:hover .anchor,
+body h6:hover .anchor {
+  padding-left: 8px;
+  margin-left: -30px;
+  text-decoration: none;
+}
+body h1:hover .anchor .octicon-link,
+body h2:hover .anchor .octicon-link,
+body h3:hover .anchor .octicon-link,
+body h4:hover .anchor .octicon-link,
+body h5:hover .anchor .octicon-link,
+body h6:hover .anchor .octicon-link {
+  display: inline-block;
+}
+body h1 tt,
+body h2 tt,
+body h3 tt,
+body h4 tt,
+body h5 tt,
+body h6 tt,
+body h1 code,
+body h2 code,
+body h3 code,
+body h4 code,
+body h5 code,
+body h6 code {
+  font-size: inherit;
+}
+body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+body h1 .anchor {
+  line-height: 1;
+}
+body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+body h2 .anchor {
+  line-height: 1;
+}
+body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+body h3 .anchor {
+  line-height: 1.2;
+}
+body h4 {
+  font-size: 1.25em;
+}
+body h4 .anchor {
+  line-height: 1.2;
+}
+body h5 {
+  font-size: 1em;
+}
+body h5 .anchor {
+  line-height: 1.1;
+}
+body h6 {
+  font-size: 1em;
+  color: #777;
+}
+body h6 .anchor {
+  line-height: 1.1;
+}
+body p,
+body blockquote,
+body ul,
+body ol,
+body dl,
+body table,
+body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+body ul,
+body ol {
+  padding-left: 2em;
+}
+body ul.no-list,
+body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+body ul ul,
+body ul ol,
+body ol ol,
+body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body li > p {
+  margin-top: 16px;
+}
+body dl {
+  padding: 0;
+}
+body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+body blockquote > :first-child {
+  margin-top: 0;
+}
+body blockquote > :last-child {
+  margin-bottom: 0;
+}
+body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+body table th {
+  font-weight: bold;
+}
+body table th,
+body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body .emoji {
+  max-width: none;
+}
+body span.frame {
+  display: block;
+  overflow: hidden;
+}
+body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+body span.frame span img {
+  display: block;
+  float: left;
+}
+body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: #333;
+}
+body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+body span.float-left span {
+  margin: 13px 0 0;
+}
+body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+body code,
+body tt {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 3px;
+}
+body code:before,
+body tt:before,
+body code:after,
+body tt:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+body code br,
+body tt br {
+  display: none;
+}
+body del code {
+  text-decoration: inherit;
+}
+body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+body .highlight {
+  margin-bottom: 16px;
+}
+body .highlight pre,
+body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+body pre {
+  word-wrap: normal;
+}
+body pre code,
+body pre tt {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+body pre code:before,
+body pre tt:before,
+body pre code:after,
+body pre tt:after {
+  content: normal;
+}
+body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+span.critic.comment > span {
+  background-color: #fff;
+}
+a {
+  color: #337ab7;
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #f8f8f2;
+  background-color: #666666;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+/* Dracula Theme
+ *
+ * https://github.com/dracula/atom
+ *
+ * Copyright 2014-present, All rights reserved
+ *
+ * Code licensed under the MIT license
+ * https://github.com/dracula/atom/blob/master/LICENSE
+ *
+ * @author Zeno Rocha <hi@zenorocha.com>
+ */
+pre.editor-colors,
+pre.editor-colors .gutter {
+  background-color: #282a36;
+  color: #f8f8f2;
+}
+pre.editor-colors.is-focused .cursor {
+  border-color: #f8f8f0;
+}
+pre.editor-colors.is-focused .selection .region {
+  background-color: rgba(153, 187, 255, 0.08);
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line {
+  background-color: rgba(153, 187, 255, 0.08);
+}
+pre.editor-colors .invisible-character {
+  color: #666666;
+}
+pre.editor-colors .indent-guide {
+  box-shadow: inset 1px 0 #454545;
+}
+pre.editor-colors .gutter .line-number.git-line-modified,
+pre.editor-colors .gutter .line-number.git-line-removed,
+pre.editor-colors .gutter .line-number.git-line-added {
+  border-left-width: 5px;
+  padding-left: calc(-4.5em);
+}
+.markdown-preview > pre.editor-colors {
+  background: #282a36;
+  border: 1px solid #282a36;
+}
+.markdown-preview pre.editor-colors {
+  color: #000000;
+}
+.wrap-guide {
+  background-color: #6272a4;
+}
+.syntax--comment {
+  color: #6272a4;
+}
+.syntax--string {
+  color: #f1fa8c;
+}
+.syntax--constant.syntax--numeric {
+  color: #bd93f9;
+}
+.syntax--constant.syntax--language {
+  color: #bd93f9;
+}
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
+  color: #bd93f9;
+}
+.syntax--variable {
+  color: #8be9fd;
+}
+.syntax--variable.syntax--other.syntax--readwrite.syntax--instance {
+  color: #ffb86c;
+}
+.syntax--constant.syntax--character.syntax--escaped,
+.syntax--constant.syntax--character.syntax--escape,
+.syntax--string .syntax--source,
+.syntax--string .syntax--source.syntax--ruby {
+  color: #ff79c6;
+}
+.syntax--keyword {
+  color: #ff79c6;
+}
+.syntax--storage {
+  color: #ff79c6;
+}
+.syntax--storage.syntax--type {
+  font-style: italic;
+  color: #8be9fd;
+}
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #50fa7b;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  font-style: italic;
+  text-decoration: underline;
+  color: #50fa7b;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #50fa7b;
+}
+.syntax--variable.syntax--parameter {
+  font-style: italic;
+  color: #ffb86c;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #ff79c6;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #50fa7b;
+}
+.syntax--support.syntax--function {
+  color: #8be9fd;
+}
+.syntax--support.syntax--constant {
+  color: #6de3fc;
+}
+.syntax--support.syntax--type,
+.syntax--support.syntax--class {
+  font-style: italic;
+  color: #66d9ef;
+}
+.syntax--invalid {
+  color: #f8f8f0;
+  background-color: #ff79c6;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #f8f8f0;
+  background-color: #bd93f9;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #cfcfc2;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #6272a4;
+}
+.syntax--markup.syntax--deleted {
+  color: #ff79c6;
+}
+.syntax--markup.syntax--inserted {
+  color: #50fa7b;
+}
+.syntax--markup.syntax--changed {
+  color: #E6DB74;
+}
+.syntax--constant.syntax--numeric.line-number.syntax--find-in-files:not(.match) {
+  color: #bd93f9;
+}
+.syntax--entity.syntax--name.syntax--filename {
+  color: #E6DB74;
+}
+.syntax--message.syntax--error {
+  color: #F83333;
+}
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json),
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end.syntax--json:not(.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json) {
+  color: #ededed;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #8be9fd;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #f1fa8c;
+}
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #50fa7b;
+}
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #ffb86c;
+}
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #ff79c6;
+}
+.syntax--meta .syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #bd93f9;
+}
+.syntax--meta .syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #50fa7b;
+}
+.syntax--meta .syntax--meta.syntax--structure.syntax--dictionary.syntax--value .syntax--string {
+  color: #ffb86c;
+}
+.syntax--heading.syntax--gfm {
+  color: #bd93f9;
+}
+.syntax--entity.syntax--gfm {
+  color: #ff79c6;
+}
+.syntax--markup.syntax--underline.syntax--link.syntax--gfm {
+  color: #8be9fd;
+}
+.syntax--variable.syntax--unordered.syntax--list.syntax--gfm {
+  color: #8be9fd;
+}
+.syntax--variable.syntax--ordered.syntax--list.syntax--gfm {
+  color: #8be9fd;
+}
+.syntax--variable.syntax--other.syntax--normal.syntax--shell {
+  color: #bd93f9;
+}
+.syntax--markup.syntax--bold.syntax--gfm {
+  color: #ffb86c;
+}
+.syntax--markup.syntax--italic.syntax--gfm {
+  color: #f1fa8c;
+}
+.syntax--markup.syntax--strike.syntax--gfm {
+  color: #ff5555;
+}
+.syntax--markup.syntax--raw.syntax--gfm {
+  color: #50fa7b;
+}
+.syntax--code.syntax--gfm {
+  color: #50fa7b;
+}
+.syntax--code.syntax--gfm .syntax--link {
+  color: #8be9fd;
+}
+.syntax--critic.syntax--gfm.syntax--addition {
+  color: #50fa7b;
+}
+.syntax--critic.syntax--gfm.syntax--deletion {
+  color: #ff5555;
+}
+.syntax--critic.syntax--gfm.syntax--substitution {
+  color: #ffb86c;
+}
+.syntax--critic.syntax--gfm.syntax--highlight {
+  color: #ff79c6;
+}
+.syntax--critic.syntax--gfm.syntax--comment {
+  color: #6272a4;
+}
+[data-zen="true"] atom-pane-container atom-pane .item-views {
+  background: #282a36 !important;
+}
+pre.editor-colors .highlight.find-result .region {
+  background: rgba(168, 197, 255, 0.08);
+  z-index: -1000;
+}
+pre.editor-colors .highlight.current-result .region,
+pre.editor-colors .highlight.current-result ~ .highlight.selection .region {
+  background: rgba(255, 255, 255, 0.08);
+  z-index: -1000;
+}
+pre.editor-colors .bracket-matcher .region {
+  border-bottom: 1px dotted #50fa7b;
+  z-index: 100;
+}
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--begin,
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--end {
+  color: #ffb86c;
+}
+</style>
+
+  </head>
+  <body>
+    <h1>MailingSystem</h1>
+<p>A system that enables easy printing for all the future Moeno-based event invitations.</p>
+<p><strong>Do not alter the program if you are note sure how to. Read the INSTRUCTIONS first!</strong></p>
+<h1>Table of contents</h1>
+<ol>
+<li>How to use the program <a href="">md</a> <a href="">html</a> <a href="">pdf</a></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">How to update</th>
+<th style="text-align:center">pdf</th>
+<th style="text-align:center">html</th>
+<th style="text-align:center">md</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>Database</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Templates</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Events</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Chargia Members</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>Current semester</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+<tr>
+<td style="text-align:center"><em>GUI</em></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+<td style="text-align:center"><a href="">link</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>§ 1 - How to use the program</h2>
+<p>Open the file <strong>MailingSystem.exe</strong>. A visual interface will appear. Afterwards:</p>
+<ol>
+<li>
+<p>Select for what event invitations should be printed.<br>
+Screenshot here</p>
+</li>
+<li>
+<p>Select which from the groups should be invited. Then click “Generate”<br>
+Screenshot here</p>
+</li>
+<li>
+<p>A pop-up will appear. This pop-up will display the current Chargia, their respective signatures, the current semester, and the amount of people invited. If any information is wrong, you can easily edit the information. This pop-up will only show up once per active session.<br>
+Screenshot here</p>
+</li>
+<li>
+<p>The desired file will be generated as a <em>pdf</em> document, which can then be easily printed.</p>
+</li>
+</ol>
+
+  </body>
+</html>

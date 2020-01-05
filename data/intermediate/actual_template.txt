@@ -1,0 +1,7 @@
+﻿\textbf{Donnerstag, <<Datum hier>>:}
+
+\begin{tabular}{ll}
+<<Zeit 1 hier>> & <<Erklarung 1 hier>> \\
+<<Zeit 2 hier>> & <<Erklarung 2 hier>> \\
+und & so weiter \\
+\end{tabular}

@@ -1,0 +1,6 @@
+This is Event 2.
+
+To edit the contents of this using Latex, go to:
+
+Application directory/data/templates/Event2/edit_me.txt
+

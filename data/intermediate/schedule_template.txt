@@ -1,0 +1,27 @@
+﻿//// INSTRUCTIONS
+//// This file is only used if the event with  a schedule is selected
+//// Just remove these comments, and fill in the tables / alter the template as you see fit at:
+//// <application directory>/data/intermediate/schedule_template.txt
+
+\textbf{Donnerstag, <<Datum hier>>:}
+
+\begin{tabular}{ll}
+<<Zeit 1 hier>> & <<Erklarung 1 hier>> \\
+<<Zeit 2 hier>> & <<Erklarung 2 hier>> \\
+und & so weiter \\
+\end{tabular}
+
+\textbf{Freitag, <<Datum hier>> :}
+
+\begin{tabular}{ll}
+<<Zeit 1 hier>> & <<Erklarung 1 hier>> \\
+<<Zeit 2 hier>> & <<Erklarung 2 hier>> \\
+<<Zeit 3 hier>> & <<Erklarung 3 hier>> \\
+\end{tabular}
+
+\textbf{Samstag, <<Datum hier>> :}
+
+\begin{tabular}{ll}
+<<Zeit 1 hier>> & <<Erklarung 1 hier>> \\
+<<Zeit 2 hier>> & <<Erklarung 2 hier>> \\
+\end{tabular}
