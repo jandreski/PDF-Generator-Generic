@@ -7,6 +7,8 @@ The application has been tested on Windows 10, but should ideally work for earli
 # How to compile
 WIP!
 
+**Important**: place the "data" folder in the same directory as the executable file. The program won't work otherwise.
+
 # How to use
 Upon executing the program, the following should appear:
 
